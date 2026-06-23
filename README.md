@@ -47,6 +47,12 @@ Self-hosted on my own hardware via **Ollama** — I rotate through the top of ea
 
 ![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white) ![Llama](https://img.shields.io/badge/Llama_(Meta)-0866FF?style=flat-square) ![Qwen](https://img.shields.io/badge/Qwen_(Alibaba)-7C3AED?style=flat-square) ![Gemma](https://img.shields.io/badge/Gemma_(Google)-1A73E8?style=flat-square) ![Mistral](https://img.shields.io/badge/Mistral_%2F_Mixtral-FF7000?style=flat-square) ![Phi](https://img.shields.io/badge/Phi_(Microsoft)-00A4EF?style=flat-square) ![DeepSeek](https://img.shields.io/badge/DeepSeek-4D6BFE?style=flat-square)
 
+### ☁️ Cloud models I've worked with
+
+Across agent workflows, tooling, and evals — the major frontier families:
+
+![Claude](https://img.shields.io/badge/Claude_(Anthropic)-D97757?style=flat-square&logo=anthropic&logoColor=white) ![GPT](https://img.shields.io/badge/GPT_(OpenAI)-412991?style=flat-square&logo=openai&logoColor=white) ![Gemini](https://img.shields.io/badge/Gemini_(Google)-8E75B2?style=flat-square&logo=googlegemini&logoColor=white) ![Grok](https://img.shields.io/badge/Grok_(xAI)-000000?style=flat-square)
+
 ---
 
 ### 🛠️ Stack
