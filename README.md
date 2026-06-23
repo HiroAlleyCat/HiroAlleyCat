@@ -29,15 +29,29 @@ Small tools that **capture → convert → transport** real-world RF into one cl
 - **The test suite is the spec** — when an API has no docs, the probe tool becomes the contract.
 - **Homelab treated like production** — SECURITY.md threat models, gated merges, SAST + SCA, versioned releases.
 
-### 🤖 Agentic ops (private lab)
+### 🤖 Agents running my stack (self-hosted)
 
-Self-hosted agentic systems: local LLMs (Ollama) + MCP tool surfaces, structured state, audit trails, and **human-gated autonomy** — bounded actions against real infrastructure, guardrail designed before the capability. *(Details on request.)*
+Local LLMs wired into the lab through MCP tool surfaces — bounded actions against real infrastructure, with structured state, audit trails, and human gates. Vague on specifics by design; the shapes:
+
+- a **self-healing ops loop** — watches the fleet and applies whitelisted fixes (dry-run → live, every action journaled)
+- a **research / synthesis pipeline** — cost-gated, routes local-vs-cloud, multi-model fallback
+- a **fleet control-plane** — exposes the lab as typed MCP tools so an agent can operate it safely
+- a **memory layer** — RAG over a local Markdown knowledge base that agents read and write back
+- **chat assistants** — budget-capped, allowlisted, shadow-mode before they go live
+
+*Guardrail designed before the capability.*
+
+### 🧠 Local models I run
+
+Self-hosted on my own hardware via **Ollama** — I rotate through the top of each major open-weight family as it ships:
+
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white) ![Llama](https://img.shields.io/badge/Llama_(Meta)-0866FF?style=flat-square) ![Qwen](https://img.shields.io/badge/Qwen_(Alibaba)-7C3AED?style=flat-square) ![Gemma](https://img.shields.io/badge/Gemma_(Google)-1A73E8?style=flat-square) ![Mistral](https://img.shields.io/badge/Mistral_%2F_Mixtral-FF7000?style=flat-square) ![Phi](https://img.shields.io/badge/Phi_(Microsoft)-00A4EF?style=flat-square) ![DeepSeek](https://img.shields.io/badge/DeepSeek-4D6BFE?style=flat-square)
 
 ---
 
 ### 🛠️ Stack
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white) ![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white) ![MQTT](https://img.shields.io/badge/MQTT-660066?style=flat-square&logo=mqtt&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) ![SonarCloud](https://img.shields.io/badge/SonarCloud-F3702A?style=flat-square&logo=sonarqubecloud&logoColor=white) ![Snyk](https://img.shields.io/badge/Snyk-4C4A73?style=flat-square&logo=snyk&logoColor=white) ![Tailscale](https://img.shields.io/badge/Tailscale-242424?style=flat-square&logo=tailscale&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white) ![MQTT](https://img.shields.io/badge/MQTT-660066?style=flat-square&logo=mqtt&logoColor=white) ![MCP](https://img.shields.io/badge/MCP-000000?style=flat-square) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) ![SonarCloud](https://img.shields.io/badge/SonarCloud-F3702A?style=flat-square&logo=sonarqubecloud&logoColor=white) ![Snyk](https://img.shields.io/badge/Snyk-4C4A73?style=flat-square&logo=snyk&logoColor=white) ![Tailscale](https://img.shields.io/badge/Tailscale-242424?style=flat-square&logo=tailscale&logoColor=white)
 
 ### 🧭 Skills I reach for
 
